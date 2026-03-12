@@ -133,33 +133,19 @@ h1, h2, h3, h4, h5, h6 {
 .sign_in .form_signin .body_form{
     background-color: var(--color-container);
     color: var(--color-text-main);
-    padding: 0 2rem;
+    padding: 0 2rem 0 4rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
     box-shadow: 0 0 20px 1px rgb(172, 171, 171);
     z-index: 1;
-}
-
-.sign_in .form_signin .body_form .left{
-    display: flex;
-    flex-direction: column;
-}
-
-.sign_in .form_signin .body_form .right{
-    display: flex;
-    flex-direction: column;
 }
 
 .sign_in .form_signin .body_form label{
     display: block;
     font-weight: var(--font-bold);
     margin-bottom: 0.2rem;
-}
-
-.sign_in .form_signin .body_form div > div{
-    margin-bottom: 0.5rem;
 }
 
 .sign_in .form_signin .foot_form{
@@ -186,17 +172,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-accent-hover);
     cursor: pointer;
     padding: 0.8rem 2.5rem
-}
-
-.sign_in .form_signin .foot_form .log{
-    font-weight: var(--font-bold);
-    color: var(--color-accent);
-    transition: 0.3s ease;
-}
-
-.sign_in .form_signin .foot_form .log:hover{
-    color: var(--color-accent-hover);
-    cursor: pointer;
 }
 
 .sign_in .form_signin .body_form input{
@@ -263,18 +238,14 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.sign_in .form_signin .body_form .password_field .password_rule{
-    position: absolute;
-    width: 18rem;
-    left: 240px;
-    top: 8px;
-    visibility: hidden;
+.sign_in .form_signin .foot_form .sign{
+    font-size: var(--h2-font-size);
+    color: var(--color-accent);
+    font-weight: bold;
+    transition: 0.3s ease;
 }
 
-.sign_in .form_signin .body_form .password_field .password_rule li.valid{
-    color: green;
-}
-
-.sign_in .form_signin .body_form .password_field:focus-within .password_rule{
-    visibility: visible;
+.sign_in .form_signin .foot_form .sign:hover{
+    color: var(--color-accent-hover);
+    cursor: pointer;
 }
